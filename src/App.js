@@ -20,3 +20,16 @@ function App() {
 }
 
 export default App;
+
+{/*
+Components folder 
+ -Home
+ -App
+ -StateIcon 
+
+  stateicon   ->
+  Home        ->      App =====> index.js(root)  ===> html ======> browser
+  Map          ->    
+  Learn       ->      
+
+*/}

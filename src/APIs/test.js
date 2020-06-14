@@ -55,12 +55,9 @@ exports.fetchData = function (url) { return __awaiter(void 0, void 0, void 0, fu
             case 0: return [4 /*yield*/, fetchApi(url)];
             case 1:
                 result = _a.sent();
-                return [4 /*yield*/, result.json()
-                    //console.log(data)
-                ];
+                return [4 /*yield*/, result.json()];
             case 2:
                 data = _a.sent();
-                //console.log(data)
                 return [2 /*return*/, data];
         }
     });

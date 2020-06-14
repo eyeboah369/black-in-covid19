@@ -10,7 +10,6 @@ const url: string = ' '
 export const fetchData = async (url: string) => {
     const result = await fetchApi(url)
     const data = await result.json()
-    //console.log(data)
     return data
 }
 

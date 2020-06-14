@@ -38,48 +38,27 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 exports.__esModule = true;
 exports.stateData = void 0;
 var test_1 = require("./test");
-var updatedStateData = [];
-var i;
-exports.stateData = function () { return __awaiter(void 0, void 0, void 0, function () {
-    var states1_1, url, states, error_1;
+exports.stateData = function (name) { return __awaiter(void 0, void 0, void 0, function () {
+    var url, states, error_1;
     return __generator(this, function (_a) {
         switch (_a.label) {
             case 0:
-                _a.trys.push([0, 3, , 4]);
-                return [4 /*yield*/, Promise.resolve().then(function () { return require('./states'); })];
+                _a.trys.push([0, 2, , 3]);
+                url = "https://covidtracking.com/api/states?state=" + name.toLocaleLowerCase();
+                return [4 /*yield*/, test_1.fetchData(url)
+                    //console.log(states)
+                ];
             case 1:
-                states1_1 = _a.sent();
-                url = 'https://covidtracking.com/api/states/daily';
-                return [4 /*yield*/, test_1.fetchData(url).then(function (data) {
-                        //console.log(data)
-                        return updatedStateData = populateStates(states1_1.states, data);
-                    })];
-            case 2:
                 states = _a.sent();
-                return [3 /*break*/, 4];
-            case 3:
+                //console.log(states)
+                return [2 /*return*/, states];
+            case 2:
                 error_1 = _a.sent();
                 console.log('this is the error:', error_1.message);
-                return [3 /*break*/, 4];
-            case 4: return [2 /*return*/];
+                return [3 /*break*/, 3];
+            case 3: return [2 /*return*/];
         }
     });
 }); };
-//console.log('jey11')
-function populateStates(states1, APIdata) {
-    //console.log(states1.length)
-    var j = 0;
-    for (i = 0; i < APIdata.length; i++) {
-        //console.log(i)
-        if (states1[j] == APIdata[i].state) {
-            updatedStateData.push(APIdata[i]);
-            j++;
-        }
-        else {
-            continue;
-        }
-    }
-    console.log("Length should be 55: ", updatedStateData.length);
-    return updatedStateData;
-}
-exports.stateData();
+//test the function call with console print
+//stateData("NY")

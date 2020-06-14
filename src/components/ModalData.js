@@ -1,24 +1,11 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { stateData } from '../APIs/stateData'
 
-let grabData = []
-grabData = stateData()
-function getData(name){
-    for(var i = 0; i < grabData.length; i++){
-        if(name == grabData[i].name){
-            return grabData[i]
-        }
-    }
+
+
+const ModalData = async (props) => {
+    const [data, setData] = useState({})
+    let grabData = await stateData(props.name)
+    return <div>{grabData.hospitalizedCurrently}</div>
 }
-function ModalData(props){
-        return(
-            <div>
-                hey
-            {getData(props.name)}
-            </div>
-        )
-    }
-
-
-
 export default ModalData
