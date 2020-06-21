@@ -11,7 +11,7 @@ function App() {
     <Router>
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/about" component={Learn} />
+        <Route path="/learn" component={Learn} />
         <Route path="/COVID19" component={CovidMap} />
       </Switch>
   </Router>
