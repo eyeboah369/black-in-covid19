@@ -4,6 +4,8 @@ import Slides from './Slides'
 import InfoBox from './InfoBox'
 import StateIcon from './StateIcon'
 import { Container, Row, Col, Button } from 'react-bootstrap'
+import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom'
+
 
 
 class Home extends React.Component {
@@ -11,7 +13,7 @@ class Home extends React.Component {
   return (
     <div className="App">
       <header className="App-header">
-        <Col>BLACK IN COVID19</Col>
+       <Col><Link to="/" style={{textDecoration: "none", color: "white"}}>BLACK IN COVID19</Link></Col>
         <Col class="float-right">
           <span style={{float: 'right'}}>
             Evans Yeboah
@@ -20,19 +22,22 @@ class Home extends React.Component {
       </header>
 
       <Slides />
-      <Container style={{display: 'inline-flex', marginLeft: "3em", paddingLeft: "10em"}}>
+      <Row style={{dipslay: "flex", alignItems: "center", justifyContent: "center", flexDirection: "row", textAlign: "center"}}>
+        
+        <InfoBox />
+
+        <div style={{dipslay: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", textAlign: "center", marginLeft: "4vw"}}>
         <Col style={{backgroundColor: ""}}>
           <StateIcon name="NY"/>
           <StateIcon name="CA"/>
           <StateIcon name="FL"/>
-            <Col style={{marginLeft: "3vw"}}>
+            <Col style={{marginLeft: ""}}>
             <StateIcon name="MI"/>
             <StateIcon name="WA"/>
           </Col>
         </Col>
-        
-        <InfoBox />
-      </Container>
+        </div>
+      </Row>
       <Col style={{position: 'fixed'}}>
         {/*<Col><Button variant="info">Back to <br />the top</Button>{' '}</Col>*/}
         {/*<svg class="bi bi-chevron-double-down" width="5em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style={{margin: "auto"}}>

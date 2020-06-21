@@ -32,7 +32,7 @@ const useData = (props) => {
         delay={{ show: 250, hide: 250 }}
         overlay={useData(props.name)}>
        {/*} <button type="button" data-container="body" data-toggle="popover" data-placement="top" data-content="hey there" style={{backgroundColor: "white", borderStyle: "none" }}> */}
-          <svg class="bi bi-hexagon" width="8em" height="8em" style={{color: '#1096F9'}} viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" >
+          <svg class="bi bi-hexagon" width="7.7em" height="7.7em" style={{color: '#1096F9'}} viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" >
             <text x="6.5" y="9" fill="black" style={{fontSize: 2, fontWeight: "bold"}}>{props.name}</text>
 
           <path fill-rule="evenodd" d="M14 4.577L8 1 2 4.577v6.846L8 15l6-3.577V4.577zM8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z"/>

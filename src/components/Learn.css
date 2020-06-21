@@ -1,0 +1,8 @@
+@media screen and (max-width: 375px) {
+
+    #arrows{
+        display: none;
+        height: 0em;
+        width: 0em;
+    }
+    }
