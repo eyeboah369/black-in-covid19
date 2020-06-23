@@ -1,8 +1,18 @@
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 535px) {
 
     #arrows{
         display: none;
         height: 0em;
         width: 0em;
     }
+    h4 {
+        font-size: 12px;
+        margin-top: 2vh;
     }
+    .firstPercent{
+        margin-top: 0vh;
+    }
+    }
+html {
+    scroll-behavior: smooth;
+}
