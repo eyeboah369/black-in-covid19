@@ -54,8 +54,8 @@ class Learn extends React.Component {
                 <Card.Title><strong>Historical Geographical Disparities</strong></Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">Health/Racism/Socioeconomics</Card.Subtitle>
                 <Card.Text>
-                    20th century practices of segregation in education, housing, the labor markets and access to health
-                    care have added to health of the African American community. 
+                    20th century practices of segregation in education, housing, the labor markets in different areas
+                    have added to poorer health of the African American community. 
                 </Card.Text>
                         <Button variant="warning" >
                             <a target="_blank" style={{color: "white"}} href="https://www.forbes.com/sites/rakeenmabud/2019/12/04/history-and-housing-discrimination-why-neighborhoods-in-the-united-states-are-still-so-segregated/#3f520fd6501d">
@@ -104,7 +104,7 @@ class Learn extends React.Component {
 
 
 
-        <Row style={{ alignItems: "center", justifyContent: "center", marginTop: "5vh", textAlign: "center"}}>
+        <Row style={{ alignItems: "center", justifyContent: "center", marginTop: "5vh",marginBottom: "5vh", textAlign: "center"}}>
           <Col><PercentIcon percent="24.5" pathColor="purple"/><h4 class="firstPercent">Native Americans</h4></Col>
           <Col><PercentIcon percent="21" pathColor="green"/><h4>Black</h4></Col>
           <Col><PercentIcon percent="18" pathColor="red"/><h4>Hispanic</h4></Col>
@@ -113,6 +113,10 @@ class Learn extends React.Component {
         </Row>
         <strong><p>Povert rate among races in the United States as reported by <a target="_blank" href="https://www.povertyusa.org/facts">povertyusa.org</a></p></strong>
         
+        <span style={{width: "60%", textAlign: "center", marginTop: "25px"}}><p>
+            Poverty is just one example of consequences of racism that play into the rate at which<br />
+            different groups of people are affected and die from COVID19, and the numbers are disturbing.
+          </p></span> 
         </Fade>
 
         

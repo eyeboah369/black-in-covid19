@@ -33,7 +33,7 @@ class Home extends React.Component {
           <StateIcon name="FL"/>
             <Col style={{marginLeft: ""}}>
             <StateIcon name="MI"/>
-            <StateIcon name="WA"/>
+            <StateIcon name="TX"/>
           </Col>
         </Col>
         </div>
