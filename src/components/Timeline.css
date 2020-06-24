@@ -1,0 +1,11 @@
+body {
+    position: relative;
+}
+ul.nav-pills {
+    top: 20px;
+    position: sticky;
+}
+#verticalScrollspy{
+    top: 60px;
+
+}
