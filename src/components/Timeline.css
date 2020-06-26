@@ -9,3 +9,29 @@ ul.nav-pills {
     top: 60px;
 
 }
+@media screen and (max-width: 535px) {
+    h2 {
+        font-size: 15px;
+        
+    }
+    h1{
+        font-size: 30px;
+    }
+    li{
+        font-size: 10px;
+        width: 90%;
+        margin-bottom: 5px;
+    }
+    .nav-link{
+        padding-right: 70px;
+    }
+    #info1{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    img{
+        height: 0%;
+    }
+}

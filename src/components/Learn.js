@@ -4,6 +4,7 @@ import './Learn.css'
 import blmProtestNYC from '../imgs/blmProtestNYC.jpg'
 import Fade from 'react-reveal/Fade';
 import PercentIcon from './PercentIcon'
+import Timeline from './Timeline'
 import { Container, Row, Col, Button, Card, Jumbotron } from 'react-bootstrap'
 import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom'
 
@@ -84,11 +85,13 @@ class Learn extends React.Component {
             </Card.Body>
         </Card>
         </Row>
-        <Row style={{marginTop: "8vh",alignItems: "center", justifyContent: "center", textAlign: "center"}}>
-          
-       <h1 style={{margin: "0 5vw 0 5vw"}}>How it Connects</h1><br />
 
+
+        <Row style={{marginTop: "8vh",alignItems: "center", justifyContent: "center", textAlign: "center"}}>
+            <h1 style={{margin: "0 5vw 0 5vw"}}>How it Connects</h1><br />
        </Row>
+
+
        <Row style={{marginTop: "2vh", alignItems: "center", justifyContent: "center", textAlign: "center"}}>
          <span style={{width: "60%"}}><p>
             Throughout American history racism and the echoing effects of slavery cannot be separated from
@@ -97,12 +100,7 @@ class Learn extends React.Component {
             healthcare, education, housing, or economics; racism and its influence remains a powerful force 
             in America. It is all connected.
           </p></span> 
-
-
-
         </Row>
-
-
 
         <Row style={{ alignItems: "center", justifyContent: "center", marginTop: "5vh",marginBottom: "5vh", textAlign: "center"}}>
           <Col><PercentIcon percent="24.5" pathColor="purple"/><h4 class="firstPercent">Native Americans</h4></Col>
@@ -118,6 +116,12 @@ class Learn extends React.Component {
             different groups of people are affected and die from COVID19, and the numbers are disturbing.
           </p></span> 
         </Fade>
+
+          <Row style={{ alignItems: "center", justifyContent: "center", marginTop: "10vh"}}>
+        <h1>Some History</h1>
+        </Row>
+            <Timeline />
+            
 
         
         </div>
