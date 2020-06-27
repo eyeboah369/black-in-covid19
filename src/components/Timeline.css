@@ -25,10 +25,11 @@ ul.nav-pills {
     .nav-link{
         padding-right: 70px;
     }
-    #info1{
+    #info1, #info2, #info3, #info4, #info5, #info6{
         align-items: center;
         justify-content: center;
         text-align: center;
+        height: 15vh;
         
     }
     img{

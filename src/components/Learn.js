@@ -32,7 +32,7 @@ class Learn extends React.Component {
       </Jumbotron>
       <Fade left>
         <Row id="info" style={{alignItems: "center", justifyContent: "center", marginTop: "5vh"}} >
-        <Card style={{ width: '25rem', marginRight: "3vw", textAlign: "center" }}>
+        <Card style={{ width: '25rem', marginRight: "3vw", textAlign: "center", boxShadow: "-6px 9.5px 20px -7px #888888" }}>
             <Card.Body>
                 <Card.Title><strong>Underlying Health</strong></Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">Health/Racism/Socioeconomics</Card.Subtitle>
@@ -50,7 +50,7 @@ class Learn extends React.Component {
             </Card.Body>
         </Card>
         
-        <Card style={{ width: '25rem',marginRight: "3vw", textAlign: "center" }}>
+        <Card style={{ width: '25rem',marginRight: "3vw", textAlign: "center", boxShadow: "-6px 9.5px 20px -7px #888888" }}>
             <Card.Body>
                 <Card.Title><strong>Historical Geographical Disparities</strong></Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">Health/Racism/Socioeconomics</Card.Subtitle>
@@ -67,8 +67,7 @@ class Learn extends React.Component {
             </Card.Body>
         </Card>
         
-        
-        <Card style={{ width: '25rem',marginRight: "3vw", textAlign: "center", float: "right" }}>
+        <Card style={{ width: '25rem',marginRight: "3vw", textAlign: "center", float: "right", boxShadow: "-6px 9.5px 20px -7px #888888" }}>
             <Card.Body>
                 <Card.Title><strong>Discrimination in Healthcare</strong></Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">Health/Racism/Socioeconomics</Card.Subtitle>
@@ -123,7 +122,15 @@ class Learn extends React.Component {
             <Timeline />
             
 
-        
+        <footer className="App-footer">
+        <Col><Link to="/" style={{textDecoration: "none", color: "white"}}>BLACK IN COVID19</Link></Col>
+        <Col class="float-right">
+        <span style={{float: 'right'}}>
+          <a target="_blank" style={{textDecoration: "none", color: "white"}} href="https://github.com/eyeboah369" class="fa fa-github"></a>
+          <a target="_blank" style={{textDecoration: "none", color: "white"}} href="https://www.linkedin.com/in/evansyeboah/" class="fa fa-linkedin"></a>
+          </span>
+        </Col>
+      </footer>
         </div>
         );
     }
