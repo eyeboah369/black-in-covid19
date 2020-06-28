@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import { Container, Carousel } from 'react-bootstrap'
+import { Container, Carousel, Col, Row } from 'react-bootstrap'
+import './Timeline.css'
+
 
 function Slides() {
     const [index, setIndex] = useState(0);
@@ -9,7 +11,7 @@ function Slides() {
     };
 
     return (
-      <Carousel activeIndex={index} onSelect={handleSelect} style={{marginBottom: '50px'}}>
+      <Carousel class="HomeData" activeIndex={index} onSelect={handleSelect} style={{marginBottom: "25px"}}>
         <Carousel.Item style={{height: '300px', backgroundColor: '#F7F6F4', marginTop: '0.2vh', paddingTop: '15vh'}}>
             <Container>
                 <h1 style={{textAlign: 'center'}}>Leverage the facts, not fear.</h1>
