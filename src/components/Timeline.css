@@ -10,6 +10,7 @@ ul.nav-pills {
 
 }
 @media screen and (max-width: 535px) {
+
     h2 {
         font-size: 15px;
         
@@ -29,7 +30,7 @@ ul.nav-pills {
         align-items: center;
         justify-content: center;
         text-align: center;
-        height: 15vh;
+       
         
     }
     img{
