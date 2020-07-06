@@ -1,6 +1,9 @@
 import React, {useState, useEffect} from 'react'
 import southeast from '../imgs/southeast.jpg'
+import StatePopulationIcon from './StatePopulationIcon'
 import { OverlayTrigger, Popover, Modal, Button, Row, Col} from 'react-bootstrap'
+const jsonData = require('../convertcsv.json')
+
 
 const useData = (props) => {
   const [data, setData] = useState({})
@@ -50,6 +53,10 @@ const useDataModal = (props) => {
   )
 }
 
+const covidData = (props) => {
+  
+}
+
   function StateIcon(props){
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
@@ -82,7 +89,7 @@ const useDataModal = (props) => {
             {useDataModal(props.name)}
             </Col>
             <Col>
-            hey
+              <StatePopulationIcon />
             </Col>
 
           </Row>
