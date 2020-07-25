@@ -19,27 +19,27 @@ function StatePopulationIcon(props){
     return <h1>Loading...</h1>
   }
 
+  //total death count by state as reported from API data
   let totalDeaths = 0
   let totalDeathsByRace = {}
   for(let i = 0; i < data.length; i++){
     if(data[i].covid_19_deaths && data[i].race_and_hispanic_origin != "Unkown"){
       if(data[i].race_and_hispanic_origin != "Unknown"){
-      totalDeaths = totalDeaths + parseInt(data[i].covid_19_deaths)
-      if(data[i].race_and_hispanic_origin in totalDeathsByRace) {
+        totalDeaths = totalDeaths + parseInt(data[i].covid_19_deaths)
+        if(data[i].race_and_hispanic_origin in totalDeathsByRace) {
 
-        totalDeathsByRace[data[i].race_and_hispanic_origin] += parseInt(data[i].covid_19_deaths)
-      }
-      else{
-    
-        totalDeathsByRace[data[i].race_and_hispanic_origin] = parseInt(data[i].covid_19_deaths)
-        
+          totalDeathsByRace[data[i].race_and_hispanic_origin] += parseInt(data[i].covid_19_deaths)
+        }
+        else{
       
+          totalDeathsByRace[data[i].race_and_hispanic_origin] = parseInt(data[i].covid_19_deaths)
+
+        }
       }
-    }
     }
   }
-  console.log(totalDeathsByRace)
-  console.log(totalDeaths)
+  //console.log(totalDeathsByRace)
+  //console.log(totalDeaths)
 
   let NHPI = totalDeathsByRace[ 'Non-Hispanic Native Hawaiian or Other Pacific Islander' ]
   let white = totalDeathsByRace[ 'Non-Hispanic White' ]
@@ -58,16 +58,16 @@ function StatePopulationIcon(props){
   parseRace.NHPI = Math.round((NHPI / totalDeaths) * 100)
 
     let result = parseRace.black + parseRace.asian + parseRace.hispanic + parseRace.native + parseRace.NHPI + parseRace.white
-    console.log(parseRace)
-    console.log(result)
+    //console.log(parseRace)
+    //console.log(result)
     return (
       <Row>
       <Col style={{flex: "inline-block"}}>
-        <Row style={{marginLeft: "1vw"}}><div style={{marginRight: "1vw", backgroundColor: "#99E3E3", height: "25px", width: "25px", borderRadius: "50%"}}></div><p>Black</p></Row>
-        <Row style={{marginLeft: "1vw"}}><div style={{marginRight: "1vw", backgroundColor: "#68EE8E", height: "25px", width: "25px", borderRadius: "50%"}}></div><p>Asian</p></Row>
-        <Row style={{marginLeft: "1vw"}}><div style={{marginRight: "1vw", backgroundColor: "#F59C57", height: "25px", width: "25px", borderRadius: "50%"}}></div><p>Hispanic</p></Row>
-        <Row style={{marginLeft: "1vw"}}><div style={{marginRight: "1vw", backgroundColor: "#9E5DE7", height: "25px", width: "25px", borderRadius: "50%"}}></div><p>Native American</p></Row>
-        <Row style={{marginLeft: "1vw"}}><div style={{marginRight: "1vw", backgroundColor: "#7282FA", height: "25px", width: "25px", borderRadius: "50%"}}></div><p>White</p></Row>        
+        <Row style={{marginLeft: "1vw"}}><div style={{marginRight: "1vw", backgroundColor: "#99E3E3", height: "25px", width: "25px", borderRadius: "50%"}}></div><p style={{marginRight: "1vw"}}>Black</p><strong><p>{parseRace.black}%</p></strong></Row>
+        <Row style={{marginLeft: "1vw"}}><div style={{marginRight: "1vw", backgroundColor: "#68EE8E", height: "25px", width: "25px", borderRadius: "50%"}}></div><p style={{marginRight: "1vw"}}>Asian</p><strong><p>{parseRace.asian}%</p></strong></Row>
+        <Row style={{marginLeft: "1vw"}}><div style={{marginRight: "1vw", backgroundColor: "#F59C57", height: "25px", width: "25px", borderRadius: "50%"}}></div><p style={{marginRight: "1vw"}}>Hispanic</p><strong><p>{parseRace.hispanic}%</p></strong></Row>
+        <Row style={{marginLeft: "1vw"}}><div style={{marginRight: "1vw", backgroundColor: "#9E5DE7", height: "25px", width: "25px", borderRadius: "50%"}}></div><p style={{marginRight: "1vw"}}>Native American</p><strong><p>{parseRace.native}%</p></strong></Row>
+        <Row style={{marginLeft: "1vw"}}><div style={{marginRight: "1vw", backgroundColor: "#7282FA", height: "25px", width: "25px", borderRadius: "50%"}}></div><p style={{marginRight: "1vw"}}>White</p><strong><p>{parseRace.white}%</p></strong></Row>        
       </Col>
 
       <Col>
