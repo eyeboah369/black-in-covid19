@@ -11,7 +11,7 @@ function Slides() {
     };
 
     return (
-      <Carousel class="HomeData" activeIndex={index} onSelect={handleSelect} style={{marginBottom: "25px"}}>
+      <Carousel class="HomeData" activeIndex={index} onSelect={handleSelect}>
         <Carousel.Item style={{height: '300px', backgroundColor: '#F7F6F4', marginTop: '0.2vh', paddingTop: '15vh'}}>
             <Container>
                 <h1 style={{textAlign: 'center'}}>Leverage the facts, not fear.</h1>

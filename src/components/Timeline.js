@@ -19,7 +19,7 @@ function Timeline(){
 					<li style={{marginBottom: "8vh"}}class="nav-item"><a class="nav-link" href="#info6">Present</a></li>
 				</ul>
             </nav>*/}
-			<div class="col-9 col-sm-10">
+			<div id="timelineRow" class="col-9 col-sm-10" style={{marginLeft: "8vw"}}>
                 
                 <Fade right>
 				<div id="info1" class="container-fluid" style={{paddingTop: "2vh", paddingLeft: "1vw", marginTop: "50px", boxShadow: "-8px 15px 10px -3px #888888", height: "99vh", backgroundColor: "#282c34"}}>

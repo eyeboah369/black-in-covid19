@@ -1,6 +1,10 @@
 import React from 'react'
-import '../App.css';
+import '../App.css'
 import StateIcon from './StateIcon'
+import northeast from '../imgs/northeast.jpg'
+import southeast from '../imgs/southeast.jpg'
+import midwest from '../imgs/midwest.jpg'
+
 import { Container, Row, Col, Button} from 'react-bootstrap'
 import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom'
 
@@ -16,77 +20,71 @@ class CovidMap extends React.Component {
                         </span>
                     </Col>
                 </header>
-                <form class="form-inline my-2 my-lg-0" style={{float: "right", marginRight: "3vw"}}>
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search State" aria-label="Search" />
-                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
-                </form>
-                <h2 style={{dipslay: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", textAlign: "center"}}>Daily Data </h2>
-               <Container style={{display: "inline-flex",alignItems: "center", justifyContent: "center", flexDirection: "row", textAlign: "center"}}>
+                <Row>
+                <Col>
+                    <h2>Daily Data </h2>
+                </Col>
+                </Row>
                 
-                <div style={{dipslay: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", textAlign: "center"}}>
+                {/* button and row for state search */}
+                <Row style={{marginLeft: ".4vw"}}>
+                    <div style={{width: "97%"}}class="input-group mb-3">
+                    <input  type="text" class="form-control" placeholder="Search State" aria-label="Recipient's username" aria-describedby="basic-addon2" />
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button">Button</button>
+                    </div>
+                    </div>
+                </Row>
 
-                <StateIcon name="AL"/>
-                <StateIcon name="AK"/>
-                <StateIcon name="AZ"/>
-                <Col style={{marginLeft: ""}}>
-                <StateIcon name="AR"/>
-                <StateIcon name="CA"/>
-                </Col>
-                <StateIcon name="CO"/>
-                <StateIcon name="CT"/>
-                <StateIcon name="DE"/>
-                <Col style={{marginLeft: ""}}>
-                <StateIcon name="FL"/>
-                <StateIcon name="GA"/>
-                </Col>
-                <StateIcon name="HI"/>
-                <StateIcon name="ID"/>
-                <StateIcon name="IL"/>
-                </div>
-                
-                <div style={{dipslay: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", textAlign: "center"}}>
 
-                <StateIcon name="IN"/>
-                <StateIcon name="IA"/>
-                <StateIcon name="KS"/>
-                <Col style={{marginLeft: ""}}>
-                <StateIcon name="KY"/>
-                <StateIcon name="LA"/>
-                </Col>
-                <StateIcon name="ME"/>
-                <StateIcon name="ME"/>
-                <StateIcon name="MD"/>
-                <Col style={{marginLeft: ""}}>
-                <StateIcon name="MA"/>
-                <StateIcon name="MI"/>
-                </Col>
-                <StateIcon name="MN"/>
-                <StateIcon name="MS"/>
-                <StateIcon name="MO"/>
-                </div>
 
-                <div style={{dipslay: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", textAlign: "center"}}>
 
-                <StateIcon name="MT"/>
-                <StateIcon name="NE"/>
-                <StateIcon name="NV"/>
-                <Col style={{marginLeft: ""}}>
-                <StateIcon name="NH"/>
-                <StateIcon name="NJ"/>
-                </Col>
-                <StateIcon name="NM"/>
-                <StateIcon name="NY"/>
-                <StateIcon name="NC"/>
-                <Col style={{marginLeft: ""}}>
-                <StateIcon name="ND"/>
-                <StateIcon name="OH"/>
-                </Col>
-                <StateIcon name="OK"/>
-                <StateIcon name="OR"/>
-                <StateIcon name="PA"/>
-                </div>
-                </Container>
-    </div>
+                <Row style={{marginLeft: "1vw", marginRight: "1vw", marginBottom: "2vh"}}>
+                    <Col style={{justifuContent: "center", boxShadow: "-6px 9.5px 20px -7px #888888", height: "100vh", borderRadius: "6px", marginRight: "1vw", marginBottom: "3vh"}}>
+                        <div style={{boxShadow: "-6px 9.5px 20px -7px #888888", height: "70vh", marginTop: "5vh", borderRadius: "2px"}}>
+                            <h1>Northeast</h1>
+                            <StateIcon name="AL" height="4.7em" width="4.7em"/>
+                            <StateIcon name="AK" height="4.7em" width="4.7em"/>
+                            <StateIcon name="AZ" height="4.7em" width="4.7em"/>
+                            <StateIcon name="AZ" height="4.7em" width="4.7em"/>
+                            </div><br />
+                    </Col>
+                        
+                    <Col md={4} style={{backgroundColor: "#EDFBFB", height: "100vh", borderRadius: "6px", boxShadow: "-6px 9.5px 20px -7px #888888"}}>
+                    <h2 style={{textAlign: "center"}}>Headlines</h2>
+                    </Col>
+                </Row>
+
+                {/*<Row style={{marginLeft: "1vw", marginRight: "1vw", marginBottom: "2vh"}}>
+                    <Col style={{backgroundImage: `url(${midwest})`,backgroundSize: "100% 100%" ,backgroundColor: "blue", height: "36vh", borderRadius: "6px", marginRight: "1vw"}}>
+                        hey
+                    </Col>
+
+                    <Col style={{backgroundColor: "orange", height: "36vh", borderRadius: "6px"}}>
+                        hey
+                    </Col>
+                </Row>
+
+                <Row style={{marginLeft: "1vw", marginRight: "1vw"}}>
+                    <Col style={{backgroundColor: "blue", height: "36vh", borderRadius: "6px", marginRight: "1vw"}}>
+                        hey
+                    </Col>
+
+                    <Col style={{backgroundColor: "orange", height: "36vh", borderRadius: "6px"}}>
+                        hey
+                    </Col>
+        </Row> */}
+               
+        <footer className="App-footer">
+        <Col><Link to="/" style={{textDecoration: "none", color: "white"}}>BLACK IN COVID19</Link></Col>
+        <Col class="float-right">
+        <span style={{float: 'right'}}>
+          <a target="_blank" style={{textDecoration: "none", color: "white"}} href="https://github.com/eyeboah369" class="fa fa-github"></a>
+          <a target="_blank" style={{textDecoration: "none", color: "white"}} href="https://www.linkedin.com/in/evansyeboah/" class="fa fa-linkedin"></a>
+          </span>
+        </Col>
+      </footer>
+            </div>
         )
     }
 }

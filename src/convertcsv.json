@@ -1,0 +1,772 @@
+{
+   "populationA" : [
+ {
+   "Title: Population Distribution by Race": {
+      "state": "Timeframe: 2018"
+   },
+   "white": "",
+   "black": "",
+   "hispanic": "",
+   "aian": "",
+   "asian": "",
+   "nhpi": "",
+   "FIELD8": "",
+   "FIELD9": "",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "Location"
+   },
+   "white": "White",
+   "black": "Black",
+   "hispanic": "Hispanic",
+   "aian": "American Indian/Alaska Native",
+   "asian": "Asian",
+   "nhpi": "Native Hawaiian/Other Pacific Islander",
+   "FIELD8": "Two Or More Races",
+   "FIELD9": "Total",
+   "FIELD10": "Footnotes"
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "United States"
+   },
+   "white": "60",
+   "black": "12",
+   "hispanic": "18",
+   "aian": "01",
+   "asian": "06",
+   "nhpi": "<.01",
+   "FIELD8": "03",
+   "FIELD9": "1.00",
+   "FIELD10": "1"
+},
+ {
+   "state": "AL",
+   "white": "66",
+   "black": "26",
+   "hispanic": "04",
+   "aian": "<.01",
+   "asian": "01",
+   "nhpi": "N/A",
+   "FIELD8": "02",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "Alaska"
+   },
+   "white": "60",
+   "black": "03",
+   "hispanic": "07",
+   "aian": "16",
+   "asian": "06",
+   "nhpi": "01",
+   "FIELD8": "07",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "Arizona"
+   },
+   "white": "54",
+   "black": "04",
+   "hispanic": "32",
+   "aian": "04",
+   "asian": "03",
+   "nhpi": "<.01",
+   "FIELD8": "02",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "Arkansas"
+   },
+   "white": "72",
+   "black": "15",
+   "hispanic": "08",
+   "aian": "01",
+   "asian": "02",
+   "nhpi": "<.01",
+   "FIELD8": "03",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "California"
+   },
+   "white": "37",
+   "black": "05",
+   "hispanic": "39",
+   "aian": "<.01",
+   "asian": "15",
+   "nhpi": "<.01",
+   "FIELD8": "03",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "Colorado"
+   },
+   "white": "68",
+   "black": "04",
+   "hispanic": "22",
+   "aian": "<.01",
+   "asian": "03",
+   "nhpi": "<.01",
+   "FIELD8": "03",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "Connecticut"
+   },
+   "white": "66",
+   "black": "10",
+   "hispanic": "17",
+   "aian": "<.01",
+   "asian": "05",
+   "nhpi": "N/A",
+   "FIELD8": "02",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "Delaware"
+   },
+   "white": "62",
+   "black": "21",
+   "hispanic": "09",
+   "aian": "<.01",
+   "asian": "04",
+   "nhpi": "N/A",
+   "FIELD8": "03",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "District of Columbia"
+   },
+   "white": "37",
+   "black": "45",
+   "hispanic": "11",
+   "aian": "N/A",
+   "asian": "04",
+   "nhpi": "N/A",
+   "FIELD8": "03",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "Florida"
+   },
+   "white": "53",
+   "black": "15",
+   "hispanic": "26",
+   "aian": "<.01",
+   "asian": "03",
+   "nhpi": "<.01",
+   "FIELD8": "02",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "Georgia"
+   },
+   "white": "52",
+   "black": "31",
+   "hispanic": "10",
+   "aian": "<.01",
+   "asian": "04",
+   "nhpi": "<.01",
+   "FIELD8": "02",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "Hawaii"
+   },
+   "white": "21",
+   "black": "02",
+   "hispanic": "10",
+   "aian": "N/A",
+   "asian": "38",
+   "nhpi": "10",
+   "FIELD8": "20",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "Idaho"
+   },
+   "white": "82",
+   "black": "01",
+   "hispanic": "13",
+   "aian": "01",
+   "asian": "02",
+   "nhpi": "N/A",
+   "FIELD8": "02",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "Illinois"
+   },
+   "white": "61",
+   "black": "14",
+   "hispanic": "17",
+   "aian": "<.01",
+   "asian": "06",
+   "nhpi": "<.01",
+   "FIELD8": "02",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "Indiana"
+   },
+   "white": "79",
+   "black": "09",
+   "hispanic": "07",
+   "aian": "<.01",
+   "asian": "02",
+   "nhpi": "N/A",
+   "FIELD8": "02",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "Iowa"
+   },
+   "white": "86",
+   "black": "03",
+   "hispanic": "06",
+   "aian": "<.01",
+   "asian": "03",
+   "nhpi": "N/A",
+   "FIELD8": "02",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "Kansas"
+   },
+   "white": "76",
+   "black": "05",
+   "hispanic": "12",
+   "aian": "01",
+   "asian": "03",
+   "nhpi": "N/A",
+   "FIELD8": "03",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "Kentucky"
+   },
+   "white": "85",
+   "black": "08",
+   "hispanic": "04",
+   "aian": "<.01",
+   "asian": "01",
+   "nhpi": "N/A",
+   "FIELD8": "02",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "Louisiana"
+   },
+   "white": "59",
+   "black": "32",
+   "hispanic": "05",
+   "aian": "01",
+   "asian": "02",
+   "nhpi": "N/A",
+   "FIELD8": "02",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "Maine"
+   },
+   "white": "93",
+   "black": "01",
+   "hispanic": "02",
+   "aian": "<.01",
+   "asian": "01",
+   "nhpi": "N/A",
+   "FIELD8": "02",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "Maryland"
+   },
+   "white": "50",
+   "black": "29",
+   "hispanic": "10",
+   "aian": "<.01",
+   "asian": "06",
+   "nhpi": "N/A",
+   "FIELD8": "03",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "Massachusetts"
+   },
+   "white": "71",
+   "black": "07",
+   "hispanic": "12",
+   "aian": "<.01",
+   "asian": "07",
+   "nhpi": "N/A",
+   "FIELD8": "03",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "Michigan"
+   },
+   "white": "75",
+   "black": "14",
+   "hispanic": "05",
+   "aian": "<.01",
+   "asian": "03",
+   "nhpi": "N/A",
+   "FIELD8": "03",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "Minnesota"
+   },
+   "white": "80",
+   "black": "06",
+   "hispanic": "05",
+   "aian": "01",
+   "asian": "05",
+   "nhpi": "N/A",
+   "FIELD8": "03",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "Mississippi"
+   },
+   "white": "57",
+   "black": "38",
+   "hispanic": "03",
+   "aian": "<.01",
+   "asian": "01",
+   "nhpi": "N/A",
+   "FIELD8": "01",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "Missouri"
+   },
+   "white": "80",
+   "black": "11",
+   "hispanic": "04",
+   "aian": "<.01",
+   "asian": "02",
+   "nhpi": "<.01",
+   "FIELD8": "03",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "Montana"
+   },
+   "white": "86",
+   "black": "<.01",
+   "hispanic": "04",
+   "aian": "06",
+   "asian": "01",
+   "nhpi": "N/A",
+   "FIELD8": "03",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "Nebraska"
+   },
+   "white": "79",
+   "black": "04",
+   "hispanic": "11",
+   "aian": "01",
+   "asian": "02",
+   "nhpi": "N/A",
+   "FIELD8": "03",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "Nevada"
+   },
+   "white": "49",
+   "black": "09",
+   "hispanic": "29",
+   "aian": "01",
+   "asian": "08",
+   "nhpi": "01",
+   "FIELD8": "04",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "New Hampshire"
+   },
+   "white": "90",
+   "black": "01",
+   "hispanic": "04",
+   "aian": "N/A",
+   "asian": "03",
+   "nhpi": "N/A",
+   "FIELD8": "02",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "New Jersey"
+   },
+   "white": "55",
+   "black": "13",
+   "hispanic": "21",
+   "aian": "<.01",
+   "asian": "10",
+   "nhpi": "N/A",
+   "FIELD8": "02",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "New Mexico"
+   },
+   "white": "37",
+   "black": "02",
+   "hispanic": "49",
+   "aian": "09",
+   "asian": "02",
+   "nhpi": "N/A",
+   "FIELD8": "02",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "New York"
+   },
+   "white": "55",
+   "black": "14",
+   "hispanic": "19",
+   "aian": "<.01",
+   "asian": "09",
+   "nhpi": "N/A",
+   "FIELD8": "03",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "North Carolina"
+   },
+   "white": "63",
+   "black": "21",
+   "hispanic": "10",
+   "aian": "01",
+   "asian": "03",
+   "nhpi": "<.01",
+   "FIELD8": "03",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "North Dakota"
+   },
+   "white": "84",
+   "black": "03",
+   "hispanic": "04",
+   "aian": "05",
+   "asian": "02",
+   "nhpi": "N/A",
+   "FIELD8": "02",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "Ohio"
+   },
+   "white": "79",
+   "black": "12",
+   "hispanic": "04",
+   "aian": "<.01",
+   "asian": "02",
+   "nhpi": "N/A",
+   "FIELD8": "03",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "Oklahoma"
+   },
+   "white": "65",
+   "black": "07",
+   "hispanic": "11",
+   "aian": "08",
+   "asian": "02",
+   "nhpi": "<.01",
+   "FIELD8": "07",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "Oregon"
+   },
+   "white": "75",
+   "black": "02",
+   "hispanic": "13",
+   "aian": "01",
+   "asian": "05",
+   "nhpi": "<.01",
+   "FIELD8": "04",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "Pennsylvania"
+   },
+   "white": "76",
+   "black": "10",
+   "hispanic": "08",
+   "aian": "<.01",
+   "asian": "04",
+   "nhpi": "N/A",
+   "FIELD8": "02",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "Rhode Island"
+   },
+   "white": "72",
+   "black": "06",
+   "hispanic": "16",
+   "aian": "N/A",
+   "asian": "03",
+   "nhpi": "N/A",
+   "FIELD8": "03",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "South Carolina"
+   },
+   "white": "64",
+   "black": "26",
+   "hispanic": "06",
+   "aian": "<.01",
+   "asian": "02",
+   "nhpi": "N/A",
+   "FIELD8": "02",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "South Dakota"
+   },
+   "white": "82",
+   "black": "02",
+   "hispanic": "04",
+   "aian": "09",
+   "asian": "01",
+   "nhpi": "N/A",
+   "FIELD8": "03",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "Tennessee"
+   },
+   "white": "74",
+   "black": "17",
+   "hispanic": "05",
+   "aian": "<.01",
+   "asian": "02",
+   "nhpi": "N/A",
+   "FIELD8": "02",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "Texas"
+   },
+   "white": "41",
+   "black": "12",
+   "hispanic": "40",
+   "aian": "<.01",
+   "asian": "05",
+   "nhpi": "<.01",
+   "FIELD8": "02",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "Utah"
+   },
+   "white": "78",
+   "black": "01",
+   "hispanic": "14",
+   "aian": "01",
+   "asian": "02",
+   "nhpi": "01",
+   "FIELD8": "03",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "Vermont"
+   },
+   "white": "93",
+   "black": "01",
+   "hispanic": "02",
+   "aian": "<.01",
+   "asian": "02",
+   "nhpi": "N/A",
+   "FIELD8": "02",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "Virginia"
+   },
+   "white": "62",
+   "black": "19",
+   "hispanic": "10",
+   "aian": "<.01",
+   "asian": "07",
+   "nhpi": "<.01",
+   "FIELD8": "04",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "Washington"
+   },
+   "white": "68",
+   "black": "04",
+   "hispanic": "13",
+   "aian": "01",
+   "asian": "09",
+   "nhpi": "01",
+   "FIELD8": "05",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "West Virginia"
+   },
+   "white": "92",
+   "black": "04",
+   "hispanic": "01",
+   "aian": "<.01",
+   "asian": "01",
+   "nhpi": "N/A",
+   "FIELD8": "02",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "Wisconsin"
+   },
+   "white": "81",
+   "black": "06",
+   "hispanic": "07",
+   "aian": "01",
+   "asian": "03",
+   "nhpi": "<.01",
+   "FIELD8": "02",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "Wyoming"
+   },
+   "white": "84",
+   "black": "00",
+   "hispanic": "10",
+   "aian": "02",
+   "asian": "01",
+   "nhpi": "N/A",
+   "FIELD8": "02",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+},
+ {
+   "Title: Population Distribution by Race": {
+      "state": "Puerto Rico"
+   },
+   "white": "01",
+   "black": "<.01",
+   "hispanic": "99",
+   "aian": "N/A",
+   "asian": "N/A",
+   "nhpi": "N/A",
+   "FIELD8": "<.01",
+   "FIELD9": "1.00",
+   "FIELD10": ""
+}
+]
+}

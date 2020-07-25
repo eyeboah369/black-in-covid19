@@ -26,12 +26,13 @@ ul.nav-pills {
     .nav-link{
         padding-right: 70px;
     }
+    #timelineRow{
+        margin-left: 12vw!important;
+    }
     #info1, #info2, #info3, #info4, #info5, #info6{
-        align-items: center;
-        justify-content: center;
         text-align: center;
-       
-        
+        padding-left: 8vw!important;
+        padding-right: 8vw!important;
     }
     img{
         height: 0%;

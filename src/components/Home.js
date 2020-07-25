@@ -22,18 +22,18 @@ class Home extends React.Component {
       </header>
 
       <Slides />
-      <Row style={{dipslay: "flex", alignItems: "center", justifyContent: "center", flexDirection: "row", textAlign: "center"}}>
+      <Row id="homeRow" style={{marginTop: "25px", dipslay: "flex", alignItems: "center", justifyContent: "center", flexDirection: "row", textAlign: "center"}}>
         
         <InfoBox />
 
-        <div style={{dipslay: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", textAlign: "center", marginLeft: "4vw"}}>
+        <div style={{ dipslay: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", textAlign: "center", marginLeft: "4vw"}}>
         <Col style={{backgroundColor: ""}}>
-          <StateIcon name="NY"/>
-          <StateIcon name="CA"/>
-          <StateIcon name="FL"/>
+          <StateIcon name="NY" height="7.7em" width="7.7em"/>
+          <StateIcon name="CA" height="7.7em" width="7.7em"/>
+          <StateIcon name="FL" height="7.7em" width="7.7em"/>
             <Col style={{marginLeft: ""}}>
-            <StateIcon name="MI"/>
-            <StateIcon name="TX"/>
+            <StateIcon name="AZ" height="7.7em" width="7.7em"/>
+            <StateIcon name="TX" height="7.7em" width="7.7em"/>
           </Col>
         </Col>
         </div>

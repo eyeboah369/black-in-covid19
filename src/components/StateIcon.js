@@ -30,28 +30,6 @@ const useData = (props) => {
   )
 }
 
-const useDataModal = (props) => {
-  const [data, setData] = useState({})
-  useEffect(() => {
-    fetch(`https://covidtracking.com/api/states?state=${props.toLowerCase()}`)
-    .then(response => response.json())
-    .then(data => setData(data));
-  },[]);
-  let positive = "Positive: " + data.positive
-  let death = "Deaths: " + data.death
-  let recovered = "Recovered: " + data.recovered 
-  let update = "Updated: " + data.lastUpdateEt
-
-  return (
-    <span>
-      {positive} <br />
-      {death} <br />
-      {recovered} <br />
-      {update}
-    </span>
-
-  )
-}
 
 const covidData = (props) => {
   
@@ -86,10 +64,7 @@ const covidData = (props) => {
         <Modal.Body>
           <Row>
             <Col>
-            {useDataModal(props.name)}
-            </Col>
-            <Col>
-              <StatePopulationIcon />
+              <StatePopulationIcon state={props.name}/>
             </Col>
 
           </Row>

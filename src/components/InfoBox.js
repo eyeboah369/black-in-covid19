@@ -17,7 +17,7 @@ class InfoBox extends React.Component {
                 <Link to="/COVID19">
                         <Button variant="primary">COVID19</Button>{' '}
                     </Link>
-                    <Link to="/learn">
+                    <Link to="/learn#top">
                         <Button variant="primary">Learn</Button>{' '}
                     </Link>
             </Card.Body>

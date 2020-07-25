@@ -1,0 +1,141 @@
+<Container style={{display: "inline-flex",alignItems: "center", justifyContent: "center", flexDirection: "row", textAlign: "center"}}>
+                
+                <div style={{dipslay: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", textAlign: "center"}}>
+
+                <StateIcon name="AL"/>
+                <StateIcon name="AK"/>
+                <StateIcon name="AZ"/>
+                <Col style={{marginLeft: ""}}>
+                <StateIcon name="AR"/>
+                <StateIcon name="CA"/>
+                </Col>
+                <StateIcon name="CO"/>
+                <StateIcon name="CT"/>
+                <StateIcon name="DE"/>
+                <Col style={{marginLeft: ""}}>
+                <StateIcon name="FL"/>
+                <StateIcon name="GA"/>
+                </Col>
+                <StateIcon name="HI"/>
+                <StateIcon name="ID"/>
+                <StateIcon name="IL"/>
+                </div>
+                
+                <div style={{dipslay: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", textAlign: "center"}}>
+
+                <StateIcon name="IN"/>
+                <StateIcon name="IA"/>
+                <StateIcon name="KS"/>
+                <Col style={{marginLeft: ""}}>
+                <StateIcon name="KY"/>
+                <StateIcon name="LA"/>
+                </Col>
+                <StateIcon name="ME"/>
+                <StateIcon name="ME"/>
+                <StateIcon name="MD"/>
+                <Col style={{marginLeft: ""}}>
+                <StateIcon name="MA"/>
+                <StateIcon name="MI"/>
+                </Col>
+                <StateIcon name="MN"/>
+                <StateIcon name="MS"/>
+                <StateIcon name="MO"/>
+                </div>
+
+                <div style={{dipslay: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", textAlign: "center"}}>
+
+                <StateIcon name="MT"/>
+                <StateIcon name="NE"/>
+                <StateIcon name="NV"/>
+                <Col style={{marginLeft: ""}}>
+                <StateIcon name="NH"/>
+                <StateIcon name="NJ"/>
+                </Col>
+                <StateIcon name="NM"/>
+                <StateIcon name="NY"/>
+                <StateIcon name="NC"/>
+                <Col style={{marginLeft: ""}}>
+                <StateIcon name="ND"/>
+                <StateIcon name="OH"/>
+                </Col>
+                <StateIcon name="OK"/>
+                <StateIcon name="OR"/>
+                <StateIcon name="PA"/>
+                </div>
+                </Container>
+
+
+
+
+
+
+CIRCULAR LOADER 
+
+ <CircularProgressbarWithChildren
+        value={65}
+        styles={buildStyles({
+          pathColor: "white",
+          trailColor: "transparent",
+          strokeLinecap: "butt"
+        })}
+      >
+          <CircularProgressbarWithChildren
+        value={100}
+        styles={buildStyles({
+          pathColor: "yellow",
+          trailColor: "transparent",
+          strokeLinecap: "butt"
+        })}
+      >
+            <CircularProgressbarWithChildren
+        value={90}
+        styles={buildStyles({
+          pathColor: "red",
+          trailColor: "transparent",
+          strokeLinecap: "butt"
+        })}
+      >
+        <CircularProgressbarWithChildren
+        value={85}
+        styles={buildStyles({
+          pathColor: "purple",
+          trailColor: "transparent",
+          strokeLinecap: "butt"
+        })}
+      >
+          
+      <CircularProgressbarWithChildren
+        value={80}
+        styles={buildStyles({
+          pathColor: "orange",
+          trailColor: "transparent",
+          strokeLinecap: "butt"
+        })}
+      >
+          
+        <CircularProgressbarWithChildren
+        value={65}
+        styles={buildStyles({
+          pathColor: "green",
+          trailColor: "transparent",
+          strokeLinecap: "butt"
+        })}
+      >
+        {/* Foreground path */}
+        <CircularProgressbar
+          value={50}
+          text={"Demographics"}
+          styles={buildStyles({
+            trailColor: "transparent",
+            strokeLinecap: "butt",
+            textSize: "10px",
+            textColor: "black"
+          })}
+        />
+        
+        </CircularProgressbarWithChildren>
+        </CircularProgressbarWithChildren>
+        </CircularProgressbarWithChildren>
+        </CircularProgressbarWithChildren>
+        </CircularProgressbarWithChildren>
+        </CircularProgressbarWithChildren>

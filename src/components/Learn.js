@@ -12,7 +12,7 @@ class Learn extends React.Component {
     render() {
         return(
         <div className="LearnPage">
-        <header className="App-header">
+        <header id="#top" className="App-header">
         <Col><Link to="/" style={{textDecoration: "none", color: "white"}}>BLACK IN COVID19</Link></Col>
         <Col class="float-right">
           <span style={{float: 'right'}}>
@@ -20,6 +20,7 @@ class Learn extends React.Component {
           </span>
         </Col>
       </header>
+
       <Jumbotron style={{backgroundImage: `url(${blmProtestNYC})`, height: "100vh",textAlign: "center"}}>
         <h1>Learn the Facts</h1>
         <h4>
@@ -119,7 +120,10 @@ class Learn extends React.Component {
           <Row style={{ alignItems: "center", justifyContent: "center", marginTop: "10vh"}}>
         <h1>Some History</h1>
         </Row>
-            <Timeline />
+
+        <Row style={{justifyContent: "center", alignItems: "center"}}>   
+                 <Timeline />
+        </Row>
             
 
         <footer className="App-footer">
