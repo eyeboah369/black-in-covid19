@@ -4,11 +4,22 @@ import StateIcon from './StateIcon'
 import northeast from '../imgs/northeast.jpg'
 import southeast from '../imgs/southeast.jpg'
 import midwest from '../imgs/midwest.jpg'
-
 import { Container, Row, Col, Button} from 'react-bootstrap'
 import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom'
 
 class CovidMap extends React.Component {
+    constructor(props){
+        super(props)
+        this.state = {inputState: " "}
+    }
+
+    onSubmit = event => {
+        event.preventDefault();
+        let name = this.name.value;
+        this.setState({
+            inputState: name
+        })
+    }
     render() {
         return(
             <div>
@@ -28,26 +39,26 @@ class CovidMap extends React.Component {
                 
                 {/* button and row for state search */}
                 <Row style={{marginLeft: ".4vw"}}>
-                    <div style={{width: "97%"}}class="input-group mb-3">
-                    <input  type="text" class="form-control" placeholder="Search State" aria-label="Recipient's username" aria-describedby="basic-addon2" />
-                    <div class="input-group-append">
-                        <button class="btn btn-primary" type="button">Button</button>
-                    </div>
-                    </div>
+                    <form style={{width: "95%"}} onSubmit = {this.onSubmit}>
+                        <div class="input-group mb-3">
+                        <input  type="text" class="form-control" placeholder="Enter State Initials" 
+                        ref={input => this.name = input} />
+
+                        <div style={{marginLeft: ".1vw"}}>
+                            <button class="btn btn-primary" type="submit">
+                                Submit
+                            </button>
+                        </div>
+                        </div>
+                    </form>
                 </Row>
 
 
 
 
                 <Row style={{marginLeft: "1vw", marginRight: "1vw", marginBottom: "2vh"}}>
-                    <Col style={{justifuContent: "center", boxShadow: "-6px 9.5px 20px -7px #888888", height: "100vh", borderRadius: "6px", marginRight: "1vw", marginBottom: "3vh"}}>
-                        <div style={{boxShadow: "-6px 9.5px 20px -7px #888888", height: "70vh", marginTop: "5vh", borderRadius: "2px"}}>
-                            <h1>Northeast</h1>
-                            <StateIcon name="AL" height="4.7em" width="4.7em"/>
-                            <StateIcon name="AK" height="4.7em" width="4.7em"/>
-                            <StateIcon name="AZ" height="4.7em" width="4.7em"/>
-                            <StateIcon name="AZ" height="4.7em" width="4.7em"/>
-                            </div><br />
+                    <Col style={{boxShadow: "-6px 9.5px 20px -7px #888888", height: "100vh", borderRadius: "6px", marginRight: "1vw", marginBottom: "3vh", paddingLeft: "25vw",paddingTop: "15vw"}}>
+                        <StateIcon  name={this.state.inputState} height="7.7em" width="7.7em" />
                     </Col>
                         
                     <Col md={4} style={{backgroundColor: "#EDFBFB", height: "100vh", borderRadius: "6px", boxShadow: "-6px 9.5px 20px -7px #888888"}}>
