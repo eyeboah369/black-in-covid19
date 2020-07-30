@@ -1,13 +1,10 @@
 import React from 'react'
 import '../App.css'
-import StateIcon from './StateIcon'
 import StateData from './StateData'
 import { Container, Row, Col, Button} from 'react-bootstrap'
 import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom'
-import { stateData } from '../APIs/stateData'
-import { render } from '@testing-library/react'
 
-
+let show = false
 class CovidMap extends React.Component {
     constructor(props){
         super(props)
@@ -15,6 +12,7 @@ class CovidMap extends React.Component {
     }
     
     onSubmit = event => {
+        show = true
         event.preventDefault();
         let name = this.name.value;
         this.setState({
@@ -22,10 +20,17 @@ class CovidMap extends React.Component {
         })
     }
     renderState(){
-        if(this.state.inputState){
-        return(
-            <StateData key={this.state.inputState} name={this.state.inputState} />
-        )
+        if(show){
+            return(
+                <StateData key={this.state.inputState} name={this.state.inputState} />
+            )
+        }
+        else{
+            return(
+                <Col style={{alignContent: "center", boxShadow: "-6px 9.5px 20px -7px #888888", height: "100vh", borderRadius: "6px", marginBottom: "3vh",textAlign: "center", paddingTop: "15vw"}}>
+                     <h1 style={{}}>Enter State to Begin</h1>
+                </Col>
+            )
         }
     }
     render() {
