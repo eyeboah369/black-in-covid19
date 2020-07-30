@@ -1,24 +1,32 @@
 import React from 'react'
 import '../App.css'
 import StateIcon from './StateIcon'
-import northeast from '../imgs/northeast.jpg'
-import southeast from '../imgs/southeast.jpg'
-import midwest from '../imgs/midwest.jpg'
+import StateData from './StateData'
 import { Container, Row, Col, Button} from 'react-bootstrap'
 import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom'
+import { stateData } from '../APIs/stateData'
+import { render } from '@testing-library/react'
+
 
 class CovidMap extends React.Component {
     constructor(props){
         super(props)
         this.state = {inputState: " "}
     }
-
+    
     onSubmit = event => {
         event.preventDefault();
         let name = this.name.value;
         this.setState({
             inputState: name
         })
+    }
+    renderState(){
+        if(this.state.inputState){
+        return(
+            <StateData key={this.state.inputState} name={this.state.inputState} />
+        )
+        }
     }
     render() {
         return(
@@ -57,10 +65,7 @@ class CovidMap extends React.Component {
 
 
                 <Row style={{marginLeft: "1vw", marginRight: "1vw", marginBottom: "2vh"}}>
-                    <Col style={{boxShadow: "-6px 9.5px 20px -7px #888888", height: "100vh", borderRadius: "6px", marginRight: "1vw", marginBottom: "3vh", paddingLeft: "25vw",paddingTop: "15vw"}}>
-                        <StateIcon  name={this.state.inputState} height="7.7em" width="7.7em" />
-                    </Col>
-                        
+                    {this.renderState()}
                     <Col md={4} style={{backgroundColor: "#EDFBFB", height: "100vh", borderRadius: "6px", boxShadow: "-6px 9.5px 20px -7px #888888"}}>
                     <h2 style={{textAlign: "center"}}>Headlines</h2>
                     </Col>
