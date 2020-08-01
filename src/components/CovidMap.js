@@ -25,6 +25,7 @@ class CovidMap extends React.Component {
     renderState(){
         let length = this.state.inputState.length
 
+        //initial state
         if(!this.state.inputState){
                 return(
                     <Col style={{alignContent: "center", boxShadow: "-6px 9.5px 20px -7px #888888", height: "100vh", borderRadius: "6px", marginBottom: "3vh",textAlign: "center", paddingTop: "15vw"}}>
@@ -32,6 +33,7 @@ class CovidMap extends React.Component {
                     </Col>
                 )
         }
+        //proper input check
         if(this.show){
             if(length == 2 && stateMap.hasOwnProperty(this.state.inputState.toUpperCase())){
                 return(
@@ -46,6 +48,7 @@ class CovidMap extends React.Component {
                 )
             }
         }
+        //catch everything else
         else{
             return(
                 <Col style={{alignContent: "center", boxShadow: "-6px 9.5px 20px -7px #888888", height: "100vh", borderRadius: "6px", marginBottom: "3vh",textAlign: "center", paddingTop: "15vw"}}>
@@ -98,25 +101,6 @@ class CovidMap extends React.Component {
                     </Col>
                 </Row>
 
-                {/*<Row style={{marginLeft: "1vw", marginRight: "1vw", marginBottom: "2vh"}}>
-                    <Col style={{backgroundImage: `url(${midwest})`,backgroundSize: "100% 100%" ,backgroundColor: "blue", height: "36vh", borderRadius: "6px", marginRight: "1vw"}}>
-                        hey
-                    </Col>
-
-                    <Col style={{backgroundColor: "orange", height: "36vh", borderRadius: "6px"}}>
-                        hey
-                    </Col>
-                </Row>
-
-                <Row style={{marginLeft: "1vw", marginRight: "1vw"}}>
-                    <Col style={{backgroundColor: "blue", height: "36vh", borderRadius: "6px", marginRight: "1vw"}}>
-                        hey
-                    </Col>
-
-                    <Col style={{backgroundColor: "orange", height: "36vh", borderRadius: "6px"}}>
-                        hey
-                    </Col>
-                </Row> */}
                
         <footer className="App-footer">
         <Col><Link to="/" style={{textDecoration: "none", color: "white"}}>BLACK IN COVID19</Link></Col>
