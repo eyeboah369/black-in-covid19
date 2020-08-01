@@ -1,18 +1,21 @@
 import React from 'react'
 import '../App.css'
 import StateData from './StateData'
+import stateMap from '../stateMap.json'
 import { Container, Row, Col, Button} from 'react-bootstrap'
 import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom'
 
-let show = false
 class CovidMap extends React.Component {
     constructor(props){
         super(props)
-        this.state = {inputState: " "}
+        this.state = {
+            inputState: " ",
+            show: false
+        }
     }
     
     onSubmit = event => {
-        show = true
+        this.show = true
         event.preventDefault();
         let name = this.name.value;
         this.setState({
@@ -20,10 +23,28 @@ class CovidMap extends React.Component {
         })
     }
     renderState(){
-        if(show){
-            return(
-                <StateData key={this.state.inputState} name={this.state.inputState} />
-            )
+        let length = this.state.inputState.length
+
+        if(!this.state.inputState){
+                return(
+                    <Col style={{alignContent: "center", boxShadow: "-6px 9.5px 20px -7px #888888", height: "100vh", borderRadius: "6px", marginBottom: "3vh",textAlign: "center", paddingTop: "15vw"}}>
+                        <h1 style={{}}>Enter State to Begin</h1>
+                    </Col>
+                )
+        }
+        if(this.show){
+            if(length == 2 && stateMap.hasOwnProperty(this.state.inputState.toUpperCase())){
+                return(
+                    <StateData key={this.state.inputState} name={this.state.inputState} />
+                )
+            }
+            else{
+                return(
+                <Col style={{alignContent: "center", boxShadow: "-6px 9.5px 20px -7px #888888", height: "100vh", borderRadius: "6px", marginBottom: "3vh",textAlign: "center", paddingTop: "15vw"}}>
+                    <h1 style={{}}>Enter State to Begin</h1>
+                </Col>
+                )
+            }
         }
         else{
             return(
@@ -33,6 +54,7 @@ class CovidMap extends React.Component {
             )
         }
     }
+
     render() {
         return(
             <div>
@@ -94,7 +116,7 @@ class CovidMap extends React.Component {
                     <Col style={{backgroundColor: "orange", height: "36vh", borderRadius: "6px"}}>
                         hey
                     </Col>
-        </Row> */}
+                </Row> */}
                
         <footer className="App-footer">
         <Col><Link to="/" style={{textDecoration: "none", color: "white"}}>BLACK IN COVID19</Link></Col>
