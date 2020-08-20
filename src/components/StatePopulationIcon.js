@@ -1,15 +1,14 @@
 import React, {useState, useEffect} from 'react'
+import "./StatePopulationIcon.css"
 import stateMap from '../stateMap.json'
 import { PieChart } from 'react-minimal-pie-chart';
-import { OverlayTrigger, Popover, Modal, Button, Row, Col} from 'react-bootstrap'
-//import {CircularProgressbar,buildStyles,CircularProgressbarWithChildren } from "react-circular-progressbar";
+import { Button, Row, Col} from 'react-bootstrap';
 import "react-circular-progressbar/dist/styles.css";
-
 
 function StatePopulationIcon(props){
   const [data, setData] = useState([])
   useEffect(() => {
-    fetch(`https://data.cdc.gov/resource/ks3g-spdg.json?state=${stateMap[props.state]} `)
+    fetch(`https://data.cdc.gov/resource/ks3g-spdg.json?state=${stateMap[props.state.toUpperCase()]}`)
     .then(response => response.json())
     .then(data => setData(data));
   },[]);
@@ -61,8 +60,9 @@ function StatePopulationIcon(props){
     //console.log(parseRace)
     //console.log(result)
     return (
-      <Row>
+      <Row class="info" style={{}}>
       <Col style={{flex: "inline-block"}}>
+        <strong><h5>COVID19 Death Percentage by Race</h5></strong>
         <Row style={{marginLeft: "1vw"}}><div style={{marginRight: "1vw", backgroundColor: "#99E3E3", height: "25px", width: "25px", borderRadius: "50%"}}></div><p style={{marginRight: "1vw"}}>Black</p><strong><p>{parseRace.black}%</p></strong></Row>
         <Row style={{marginLeft: "1vw"}}><div style={{marginRight: "1vw", backgroundColor: "#68EE8E", height: "25px", width: "25px", borderRadius: "50%"}}></div><p style={{marginRight: "1vw"}}>Asian</p><strong><p>{parseRace.asian}%</p></strong></Row>
         <Row style={{marginLeft: "1vw"}}><div style={{marginRight: "1vw", backgroundColor: "#F59C57", height: "25px", width: "25px", borderRadius: "50%"}}></div><p style={{marginRight: "1vw"}}>Hispanic</p><strong><p>{parseRace.hispanic}%</p></strong></Row>

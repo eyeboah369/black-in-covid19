@@ -1,0 +1,11 @@
+@media only screen and (max-width: 320px) {
+    p{
+        font-size: 12px!important;
+
+        
+    }
+    h5{
+        margin-bottom: 3vh;
+        font-weight: bold;
+    }
+}
