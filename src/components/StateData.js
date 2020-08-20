@@ -4,12 +4,14 @@ import StateIcon from './StateIcon'
 import Slide from 'react-reveal/Slide';
 import stateMap from '../stateMap.json'
 import infectionRate from '../infectionRate.json'
+import StatePopulationIcon from './StatePopulationIcon'
 
 let currDeath = 0
 let positivePercentageIncrease = 0
 let deathPercentageIncrease = 0
 
 function useRate(props){
+    console.log("base: ", infectionRate[props.toUpperCase()][0])
     const [data, setData] = useState([])
   useEffect(() => {
     fetch(`https://covidtracking.com/api/states?state=${props.toLowerCase()}`)
@@ -18,22 +20,25 @@ function useRate(props){
   },[]);
   let currPositive = infectionRate[props.toUpperCase()][0]
   let positive = data.positive
+  let death = data.death
   if(positive > currPositive){
     let increaseRate = positive - currPositive
     positivePercentageIncrease = (increaseRate / positive) * 100
     infectionRate[props.toUpperCase()][0] = positive
+    console.log("Increase: ", infectionRate[props.toUpperCase()][0])
     return increase(positivePercentageIncrease)
   }
   else{
     infectionRate[props.toUpperCase()][0] = positive
+    console.log("Decrease: ", infectionRate[props.toUpperCase()][0])
     return decrease(positivePercentageIncrease)
   }
   //TODO: add same functionality to the death rate for the function call
   //important to remeber that death count doesnt go down but only up
   //    so question needs to be asked of what we want to represent: either the rate at which death is increasing
   //    or total increase in death
-  let death = data.death
 }
+
 function decrease(decrease){
     return(
         <Col>
@@ -64,7 +69,7 @@ function StateData(props){
     return(
         <Slide left>
             <Col style={{textAlign: "center", boxShadow: "-6px 9.5px 20px -7px #888888", height: "100vh", borderRadius: "6px", 
-                        marginRight: "28.3vw", marginBottom: "3vh", paddingLeft: "0vw",paddingTop: "3vh"}}>
+                        marginRight: "38.3vw", marginBottom: "3vh", paddingLeft: "0vw",paddingTop: "3vh"}}>
 
                 <Row style={{marginBottom: "4vh"}}>
                     <Col>
@@ -72,13 +77,13 @@ function StateData(props){
                     </Col>
                 </Row>
 
-                <Row>
-                    <Col md={4}><StateIcon name={props.name} height="7.7em" width="7.7em" /></Col>
+                <Row style={{justifyContent: "center", alignContent: "center", fontSize: "20px"}}>
+                    <Col><StatePopulationIcon state={props.name} /></Col>
                 </Row>
 
                 <Row>
-                    <Col><h2>Death Rate</h2></Col>
-                    {useRate(props.name)}
+                    {/*<Col><h2>Death Rate</h2></Col>*/}
+                    {/*{useRate(props.name)*/}
                 </Row>
 
             </Col>
