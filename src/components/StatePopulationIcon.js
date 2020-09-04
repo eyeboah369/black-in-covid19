@@ -43,8 +43,8 @@ function StatePopulationIcon(props){
   let NHPI = totalDeathsByRace[ 'Non-Hispanic Native Hawaiian or Other Pacific Islander' ]
   let white = totalDeathsByRace[ 'Non-Hispanic White' ]
   let black = totalDeathsByRace[ 'Non-Hispanic Black' ]
-  let asian = totalDeathsByRace[ 'Non-Hispanic Asian' ]
-  let hispanic = totalDeathsByRace[ 'Hispanic or Latino' ]
+  let asian = totalDeathsByRace[ 'Non-Hispanic Asian or Pacific Islander' ]
+  let hispanic = totalDeathsByRace[ 'Hispanic' ]
   let native = totalDeathsByRace[ 'Non-Hispanic American Indian or Alaska Native' ]
 
   let parseRace = {}
@@ -57,7 +57,7 @@ function StatePopulationIcon(props){
   parseRace.NHPI = Math.round((NHPI / totalDeaths) * 100)
 
     let result = parseRace.black + parseRace.asian + parseRace.hispanic + parseRace.native + parseRace.NHPI + parseRace.white
-    //console.log(parseRace)
+    console.log(parseRace)
     //console.log(result)
     return (
       <Row class="info" style={{}}>
@@ -68,6 +68,7 @@ function StatePopulationIcon(props){
         <Row style={{marginLeft: "1vw"}}><div style={{marginRight: "1vw", backgroundColor: "#F59C57", height: "25px", width: "25px", borderRadius: "50%"}}></div><p style={{marginRight: "1vw"}}>Hispanic</p><strong><p>{parseRace.hispanic}%</p></strong></Row>
         <Row style={{marginLeft: "1vw"}}><div style={{marginRight: "1vw", backgroundColor: "#9E5DE7", height: "25px", width: "25px", borderRadius: "50%"}}></div><p style={{marginRight: "1vw"}}>Native American</p><strong><p>{parseRace.native}%</p></strong></Row>
         <Row style={{marginLeft: "1vw"}}><div style={{marginRight: "1vw", backgroundColor: "#7282FA", height: "25px", width: "25px", borderRadius: "50%"}}></div><p style={{marginRight: "1vw"}}>White</p><strong><p>{parseRace.white}%</p></strong></Row>        
+        <Row style={{marginLeft: "1vw"}}><div style={{marginRight: "1vw", backgroundColor: "gray", height: "25px", width: "25px", borderRadius: "50%"}}></div><p style={{marginRight: "1vw"}}>Native Hawaiian/Pacific Islander</p><strong><p>{parseRace.NHPI}%</p></strong></Row>        
       </Col>
 
       <Col>
